@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
 
   res.writeHead(200, { "Content-Type": "text/html" });
   let html =fs.readFileSync("./index.html","utf-8")
-  html=html.replace("{{name}}",name);
+  html=html.replace("{{name}}",name);    //for dynamic changes of values
   res.end(html);
 });
 
