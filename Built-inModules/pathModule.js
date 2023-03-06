@@ -6,7 +6,7 @@ console.log(__dirname);//__filename is a string represents full path of the fold
 console.log(path.basename(__filename));//last portion of __filename
 console.log(path.basename(__dirname));//last portion of __dirname
 
-console.log(path.extname(__filename));//show the file extension
+console.log(path.extname(__filename));
 console.log(path.extname(__dirname));
 
 console.log(path.parse(__filename));//returns all the above details in an "object" format and we can access it with dot(.) as we do it for objects
