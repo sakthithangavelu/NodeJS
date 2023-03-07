@@ -1,6 +1,6 @@
 const http = require('http')
 
-http.get("http:/api.open-notify.org/astros.json",resp => {
+http.get("http://jsonplaceholder.typicode.com/posts",resp => {
   let data = "";
   resp.on("data",chunk =>{
     data+= chunk

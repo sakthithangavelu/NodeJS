@@ -19,7 +19,7 @@ console.log("third");//writeFileSync - writes content in to the file
 fs.writeFileSync("./fileNew.txt","Hi Joy");
 
 //writeFile - asynchronous approach
-fs.writeFile("./fileNew.txt"," Hi Joy",{flag :"a"},(err)=> {  //flag is used to append the txt in the mentioned file
+fs.writeFile("./fileNew.txt"," Hi Joy",{flag :"a"},(err)=> {  
     if(err){
         console.log(err);
     }else{

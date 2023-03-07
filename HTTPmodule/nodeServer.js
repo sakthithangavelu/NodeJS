@@ -1,4 +1,4 @@
-const http = require("node:http"); //import built-in http module
+const http = require("node:http");
 
 const server = http.createServer((req, res) => {
   const empDetails = {
