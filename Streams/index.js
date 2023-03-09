@@ -6,7 +6,7 @@ const readableStream = fs.createReadStream("./file1.txt",{
     highWaterMark:2,
 })
 
-const writeableStream = fs.createWriteStream("./file3.txt")
+const writeableStream = fs.createWriteStream("./file4.txt")
 
 readableStream.on("data",(chunk) => { 
     console.log(chunk);
