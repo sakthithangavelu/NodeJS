@@ -1,4 +1,12 @@
 const buffer = new Buffer.from("Sakthi")
+
+//initialize the buffer passing the size - buffer.alloc()
+// const buffer = Buffer.alloc(1024)
+// //or
+// const buffer = Buffer.allocUnsafe(1024)
+
+
+
 console.log(buffer.toJSON());//each number logged in console are unicode charcater code for the string "Sakthi" 
 console.log(buffer.toString());//You can print the full content of the buffer using the toString() method:
 
