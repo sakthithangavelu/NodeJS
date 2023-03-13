@@ -2,7 +2,7 @@ const cluster = require("node:cluster");//cluster module increases performance i
 const http = require ("node:http");
 
 
-if(cluster.isMaster){
+if(cluster.isWorker){
     console.log(`Master process ${process.pid} is running`);
     cluster.fork(); //worker 1
     cluster.fork(); //worker 2
@@ -21,3 +21,14 @@ if(cluster.isMaster){
     })
     server.listen(8000,()=>console.log("Server is running on port 8000"));
 }
+
+
+// var cluster = require('cluster');
+
+// if (cluster.isMaster) {
+//   console.log('I am a worker');
+// } else {
+//   console.log('I am a master');
+//   cluster.fork();
+//   cluster.fork();
+// }
